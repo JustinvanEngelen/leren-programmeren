@@ -1,16 +1,18 @@
 from importlib import import_module
 import math
 
+acroissant = input  ("hoeveel croissantjes wilt u? ")
 
-acroissant = 17
-croissant = 0.39 * acroissant
+croissant = 0.39 * int (acroissant)
+astokbrood = input  ("Hoeveel stokbroden wilt u? ")
 
-astokbrood = 2
-stokbrood = 2.78 * astokbrood
+stokbrood = 2.78 * int (astokbrood)
+akorting = input ("Hoeveel kortingsbonnen heeft u? ")
 
-akorting= 3
-korting = 0.50 * akorting
-totaal = 10.69
-print(croissant+stokbrood-korting)
+korting = 0.50 * int (akorting)
+totaal = int (croissant)+int (stokbrood)-int (korting)
+
 
 print("De feestlunch kost je bij de bakker ",totaal," euro voor de ",acroissant," croissantjes en de ",astokbrood," stokbroden als de ",akorting," kortingsbonnen nog geldig zijn!")
+
+croissant = int (acroissant) * 0.39
