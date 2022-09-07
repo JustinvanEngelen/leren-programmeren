@@ -6,6 +6,8 @@ ticket = 7.45 * ppl
 a = 5
 tijd = 45
 prijs = tijd/a
-vr = 0.37 * prijs
+vrbril= 0.37 * prijs
+totaal = 33.13
+print(ticket+vrbril)
 
-print(ticket+vr)
+print("Dit geweldige dagje-uit met ",ppl," mensen in de Speelhal met ",tijd," minuten VR kost je maar ",totaal," euro")
