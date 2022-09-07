@@ -1,0 +1,6 @@
+print("  --------------------------------------------------")
+naam = input (" | Wat is je naam?")
+adres = input (" | Wat is je adres?")
+postcode = input (" | Wat is uw postcode?")
+woonplaats = input (" | wat is uw woonplaats")
+print("  --------------------------------------------------")
