@@ -1,5 +1,7 @@
 from importlib import import_module
+from logging.config import stopListening
 import math
+from multiprocessing.resource_sharer import stop
 
 #Justin van Engelen
 #99074835
@@ -15,13 +17,23 @@ keuze = input ("wilt u een small medium of large pizza :")
 aantal = input ("hoeveel pizza's wilt u? :")
 
 if keuze == "small":
-    prijs = int (aantal) * small
-
+    try :
+        prijs= int (aantal) * small
+    except :
+        print ("dat is geen nummer")
+        stop
 if keuze == "medium":
-    prijs = int (aantal) * medium
-
+    try :
+        prijs = int (aantal) * medium
+    except :
+        print ("dat is geen nummer")
+        stop
 if keuze == "large":
-    prijs = int (aantal) * large
+    try :
+        prijs = int (aantal) * large
+    except :
+        print ("dat is geen nummer")
+        stop
 
 
 
