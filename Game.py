@@ -7,6 +7,7 @@ if begin == "y":
 else:
     if begin =="n":
         print ("Neem geen contact op")
+        quit()
 sleep(2)
 print("Uw codenaam is Meneer Frog")
 sleep(2)
@@ -21,6 +22,7 @@ if vraag1 == "jetpack":
     vraag2= input ("Wil je een harde landing of zachte landing").lower()
     if vraag2 == "harde landing":
         print ("Je land te hard op het dak je valt door het dak en je word neer geschoten")
+        quit()
     else:
         if vraag2 == "zachte landing" :
             print("Goede keuze je bent veilig op het dak")
@@ -29,7 +31,7 @@ else :
         print ("You died je gooide de enderpearl in het riool")
         quit()
 sleep(2)
-print("je ziet een open raam je klimt  naar binnen")
+print("je ziet een open raam je klimt naar binnen")
 sleep(2)
 print ("er komt een bewaker aan welk voorwerp gebruik")
 sleep(2)
@@ -40,9 +42,11 @@ if vraag3 == "pokeball" :
 else:
     if vraag3 == "speed potion" :
         print("De speed potion geeft geen versnelde reactie tijd dus knal je tegen een muur")
+        quit()
     else:
         if vraag3 == "boomerang":
             print("Je gooit de boomerang maar hij komt terug tegen je hoofd")
+            quit()
         else:
             if vraag3 == "vlugge ugge":
                 print("Goede keuze je rijd weg met de vlugge ugge")
@@ -52,9 +56,11 @@ print("maar het alarm gaat af hoe ga je escapen")
 vraag4 = input ("ga je met de bom of met de granaat of doe je niks en denk je even goed na").lower()
 if vraag4 == "bom" :
     print ("Je zet de bom aan en hij blies gelijk op toen je er naast stond")
+    quit()
 else:
     if vraag4 == "granaat" :
         print("Je gooide de granaat tegen de muur en hij kaatste terug naar jou en ontplofte")
+        quit()
     else:
         if vraag4 == "niks" :
             print("Je deed niks dus ging je maar door de voordeur")
