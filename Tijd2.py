@@ -13,7 +13,7 @@ while am == True:
 while pm == True:
     print("",tijd,"PM")
     tijd = tijd + 1
-    if tijd <= 24:
+    if tijd < 24:
         pm = True
     else:
         pm = False
