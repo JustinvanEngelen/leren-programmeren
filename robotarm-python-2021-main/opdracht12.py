@@ -1,28 +1,30 @@
-from multiprocessing.resource_sharer import stop
-from urllib import robotparser
+
 from RobotArm import RobotArm
 
 
 
 robotArm = RobotArm('exercise 12')
-robotArm.speed = 5
-# Jouw python instructies zet je vanaf hier:
-for x in range(25):
+var1 = 0
+robotArm.speed = 3
+# Jouw python instructies zet je vanaf hier:(
+
+for j in range (10):
     robotArm.grab()
-    robotArm.scan()
-    if robotArm.scan()=="red":
-        for x in range(25):
+    if robotArm.scan() == "red":
+        var1+=1
+        for k in range (9):
             robotArm.moveRight()
         robotArm.drop()
-        for x in range(25):
+        var2 = 10 - var1
+        for c in range (var2):
             robotArm.moveLeft()
-
-
-
 
     else:
         robotArm.drop()
         robotArm.moveRight()
+        var1 = var1 +1
+        
+
 
 
 

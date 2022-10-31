@@ -1,4 +1,4 @@
-dag = input ("welke dag is het vandaag").lower()
+dag = input ("welke dag is het vandaag: ").lower()
 ma = "maandag"
 di = "dinsdag"
 wo = "woensdag"

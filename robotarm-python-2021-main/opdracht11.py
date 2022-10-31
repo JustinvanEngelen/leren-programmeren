@@ -6,9 +6,9 @@ robotArm.speed = 5
 
 
 # Jouw python instructies zet je vanaf hier:
-
-robotArm.moveRight(),robotArm.moveRight(),robotArm.moveRight(),robotArm.moveRight(),robotArm.moveRight(),robotArm.moveRight(),robotArm.moveRight(),robotArm.moveRight(),robotArm.moveRight(),robotArm.moveRight()
-    
+for x in range(11):
+    robotArm.moveRight()
+quit
 for x in range (9):
     robotArm.moveLeft()
     robotArm.grab()
@@ -19,6 +19,7 @@ for x in range (9):
         robotArm.moveLeft()
     else:
         robotArm.drop()
+
         
 
 

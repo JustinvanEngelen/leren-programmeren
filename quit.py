@@ -7,4 +7,4 @@ while goed == True:
         goed = False
     else:
         punten = punten+1
-        goed  = True
+        
