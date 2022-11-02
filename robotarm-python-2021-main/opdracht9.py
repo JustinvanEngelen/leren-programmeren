@@ -11,7 +11,7 @@ for i in range (1,5):
         robotArm.drop()
         for i in range (5):
             robotArm.moveLeft()
-    robotArm.moveRight()
+    robotArm.moveRight()    
 
 
 # Na jouw code wachten tot het sluiten van de window:

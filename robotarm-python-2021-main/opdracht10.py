@@ -2,7 +2,7 @@ from multiprocessing.resource_sharer import stop
 from RobotArm import RobotArm
 
 robotArm = RobotArm('exercise 10')
-robotArm.speed = 5
+robotArm.speed = 2
 
 # Jouw python instructies zet je vanaf hier:
 l = 9

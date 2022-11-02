@@ -4,8 +4,8 @@ from RobotArm import RobotArm
 
 
 robotArm = RobotArm('exercise 12')
-var1 = 0
-robotArm.speed = 3
+var1 = 1
+robotArm.speed = 2
 # Jouw python instructies zet je vanaf hier:(
 
 for j in range (10):
