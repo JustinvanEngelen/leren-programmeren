@@ -1,28 +1,28 @@
-import random
-opnieuw = True
-boodschappenlijst={
+boodschappenlijst = {}
+repeat = True
 
-}
-while opnieuw == True:
-    wat = input ("wat wil u aan het lijstje toevoegen : ").lower()
-    try:
-        hoeveel = int(input ("hoeveel wilt u daarvan toevogen : "))
-        boodschappenlijst.update({hoeveel:wat})
-    except: 
-        print("dat is geen getal")
-    meer = input ("wilt u nog iets : ").lower()
-    if meer == "ja":
-        continue
-    if meer == "nee":
-        opnieuw==False
-        break
+while repeat == True:
+    product = input("Wat wil je nog aan je boodschappen lijst toevoegen? ").lower()
+    aantal = int(input("Hoeveel wil je daarvan? "))
+
+    if product in boodschappenlijst:
+            boodschappenlijst[product] = boodschappenlijst[product] + aantal
+            repeat = True
+
     else:
-        break
-print("-[Boodschappenlijstje]-")
-print(boodschappenlijst)
-print("________________________")
+            boodschappenlijst[product] = aantal
 
-    
+    herhaal = input("Wilt u nog meer toevoegen?").lower()
+
+    if herhaal == "yes" or herhaal == "ja":
+        repeat = True
+
+    elif herhaal == "no" or herhaal == "nee":
+        repeat = False
 
 
- 
+        print("Hier is jou lijst:")
+        print("---------------------------")
+        for key, value in boodschappenlijst.items():
+            print(value,"x ",key)
+        print("---------------------------")
