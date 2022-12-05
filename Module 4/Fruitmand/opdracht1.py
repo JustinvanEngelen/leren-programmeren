@@ -1,2 +1,2 @@
 from fruitmand import fruitmand
-print (fruitmand)
+print(fruitmand)
