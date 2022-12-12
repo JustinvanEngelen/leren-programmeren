@@ -10,7 +10,7 @@ for x in range(len(fruitmand)):
     if kleur not in lijstkleuren:
         lijstkleuren.append(kleur)
 while loop == True:
-    kleur = str(input("Kies een kleur uit de kleuren" + str(lijstkleuren)+"\n? "))
+    kleur = str(input("Kies een kleur uit de kleuren : " + str(lijstkleuren)+"? "))
     if (kleur.lower()) not in lijstkleuren:
         print ("De Kleur " + kleur + " zit er niet in de fruitmand")
         loop = True
