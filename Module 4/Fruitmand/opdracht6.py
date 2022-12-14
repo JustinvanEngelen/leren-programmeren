@@ -1,4 +1,4 @@
 from fruitmand import fruitmand
 for fruit in range (len(fruitmand)):
-    if fruitmand["name"] == "appel":
-        print("weight")
+    if fruitmand[fruit]["name"] == "appel":
+        print(fruitmand[fruit]["weight"])
