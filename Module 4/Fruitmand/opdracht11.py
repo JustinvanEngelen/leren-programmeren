@@ -10,7 +10,7 @@ for x in range(len(fruitmand)):
     if kleur not in lijstkleuren:
         lijstkleuren.append(kleur)
 while loop == True:
-    kleur = str(input("Kies e en kleur uit de kleuren : " + str(lijstkleuren)+"? "))
+    kleur = str(input("Kies een kleur uit de kleuren : " + str(lijstkleuren)+"? "))
     if (kleur.lower()) not in lijstkleuren:
         print ("De Kleur " + kleur + " zit er niet in de fruitmand")
     else:
@@ -22,8 +22,7 @@ for fruit in fruitmand:
                     rond += 1
                 else:
                     nietrond += 1
-print (rond)
-print (nietrond)
+
 verschil = rond - nietrond
 verschil = abs(verschil)
 if rond > nietrond:
