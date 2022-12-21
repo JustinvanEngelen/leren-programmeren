@@ -1,7 +1,5 @@
 from fruitmand import fruitmand
 loop = True
-kleuren = []
-naam = []
 lijstkleuren = []
 rond = 0
 nietrond = 0
@@ -23,8 +21,7 @@ for fruit in fruitmand:
                 else:
                     nietrond += 1
 
-verschil = rond - nietrond
-verschil = abs(verschil)
+verschil = abs(rond - nietrond)
 if rond > nietrond:
     print (f"Er zijn {int(verschil)} meer ronde vruchten dan niet ronde vruchten in de kleur {str(kleur)}")
 if rond < nietrond:

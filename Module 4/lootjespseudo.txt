@@ -1,0 +1,10 @@
+vraag1 = input ("Geef unieke naam/namen : ")
+als er niet 3 namen zijn vraag de vraag opnieuw
+als het er meer dan 3 zijn ga door
+zijn ze uniek nee terug naar vraag1
+zijn ze uniek ga naar vraag2
+vraag2 = input ("wil je nog meer namen toevoegen)
+als vraag2 ja ga naar vraag1
+als vraag2 nee ga door 
+lootjes trekken
+nee print alle namen met bij behorende lootjes

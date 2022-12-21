@@ -6,6 +6,7 @@ while vraag == True:
     try:
         aantal=int(input("hoeveel fruit wilt u? : "))
     except:
+        print("dat is geen getal")
         continue
     vraag = False
     for fruit in range(len(fruitmand)):
