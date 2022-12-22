@@ -16,6 +16,7 @@ while opnieuw == True:
     if meer =="ja":
         wie=input("wie wil je nog meer toevoegen? : ").lower()
         if wie in lijst:  
+            print("die naam zit er al in")
             continue
         else:
             lijst.append(wie)
