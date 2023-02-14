@@ -8,6 +8,7 @@ def fibonaccireeks(aantal:int):
         volgende = cijfers.append(cijfers[oudgetal]+cijfers[nieuwgetal])
         oudgetal += 1
         nieuwgetal += 1
-    print(cijfers)
+    print(cijfers) 
     return cijfers
 fibonaccireeks(20)
+
