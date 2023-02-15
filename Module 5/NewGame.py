@@ -14,9 +14,6 @@ def intro():
         elif begin =="n":
             print ("Neem geen contact op")
             quit()
-        elif begin =="w rizz":
-            print("jij pulled alle bitches gefeliciteerd")
-            quit()
         else:
             print("Je moet Y of N zeggen")
             continue

@@ -10,5 +10,5 @@ def fibonaccireeks(aantal:int):
         nieuwgetal += 1
     print(cijfers) 
     return cijfers
-fibonaccireeks(20)
+fibonaccireeks(10)
 
