@@ -1,9 +1,10 @@
 #print("Welkom bijPapi Gelato je mag alle smaken kiezen zolang het maar vanille ijs is.")
-#aantal = input("Hoeveel bolletjes wilt u?")
+#aantal = int(input("Hoeveel bolletjes wilt u?"))
 #if aantal>8:
     #print("Sorry, zulke grote bakken hebben we niet")
 #if aantal<0:
     #print("Sorry dat snap ik niet")
+    #terug naar de vraag
 
 
 #if aantal<=3:
@@ -14,6 +15,7 @@
         #print("Hier is uw hoorntje met {aantal} bolletje(s)")
     #else:  
         #print("Sorry dat snap ik niet")
+        #terug naar de vraag
 
         #meer = input("Wilt u nog meer bestellen?")
         #if meer == "ja":
@@ -22,6 +24,7 @@
             #print("Bedankt en tot ziens!")
         #else:
             #print("Sorry dat snap ik niet")
+            #terug naar de vraag
 
 
 #if aantal >3:
@@ -30,3 +33,5 @@
 
 #else:
     #print("sorry dat snap ik niet")
+    #terug naar de vraag
+
