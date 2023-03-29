@@ -1,10 +1,22 @@
 from functions import *
 from data import *
 meer = True
+
+
+
+welkom()
 while meer == True:
-    welkom()
     aantal=aantalbolletjes()
+
+
+
+
+
+
+
+    kiesjesmaak(aantal)
     keuze=verpakking(aantal)
     bestelling(aantal,keuze)
     meer= meerbestellen()
-bonnetje(aantal,keuze,hoorntjesaantal=0,bakjesaantal=0)
+bonnetje()
+

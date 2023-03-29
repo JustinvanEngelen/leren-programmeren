@@ -39,7 +39,6 @@ if keuze == "large":
 
 
 
-print ("de prijs is ",prijs,"")
 
 print("------------------------------")
 print("|het totale bedrag is ",prijs,"|")
