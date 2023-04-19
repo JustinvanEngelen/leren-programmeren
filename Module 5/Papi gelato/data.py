@@ -1,5 +1,5 @@
 prijzen={
-    "bolletjes" : 1.10,
+    "bolletjes" : 0.95,
     "hoorntjes" : 1.25,
     "bakjes"    : 0.75,
     "slagroom"  : 0.50,
@@ -19,25 +19,25 @@ smaken={
     "a" : "aardbei",
     "c" : "chocolade",
     "v" : "vanille",
-    "m" : "munt"
+
 }
 litersmaken={
     "a" : "aardbei",
     "c" : "chocolade",
     "v" : "vanille",
-    "m" : "munt"
+
 }
 smakenaantal={
     "a" : 0,
     "c" : 0,
     "v" : 0,
-    "m" : 0,
+
 }
 litersmakenaantal={
     "a" : 0,
     "c" : 0,
     "v" : 0,
-    "m" : 0,
+
 }
 
 topping={
