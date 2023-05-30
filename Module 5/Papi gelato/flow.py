@@ -7,12 +7,12 @@ klanten=klant()
 while meer == True:
 
 
-    aantal=aantalbolletjes(klanten)
+    aantal=aantalijs(klanten)
     kiesjesmaak(aantal,klanten)
-    if klanten == "2":
+    if klanten == "2":#zakelijke klant
         break
     
-    if klanten == "1":
+    if klanten == "1":#particuliere klant
         keuze=verpakking(aantal)
         toppings(aantal,keuze)
         bestelling(aantal,keuze)

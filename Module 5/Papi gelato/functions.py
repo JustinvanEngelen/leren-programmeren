@@ -14,10 +14,10 @@ def klant():
             continue
 #--------------------------Aantal bolletjes---------------------------------------------------------------------------------------------#
 
-def aantalbolletjes(klanten:str):
+def aantalijs(klanten:str):
     doorgaan = True
     while doorgaan == True:
-        if klanten == "2":
+        if klanten == "2":#zakelijke klant
             try:
                 liter = int(input("Hoeveel liter ijs wilt u?"))
                 aantallen["liter"] += liter
@@ -30,7 +30,7 @@ def aantalbolletjes(klanten:str):
             except:
                 print("Sorry dat is geen optie die we aanbieden")
                 continue
-        if klanten == "1":
+        if klanten == "1":#particuliere klant
             try:
                 aantal = int(input("Hoeveel bolletje(s) wilt u?"))
                 aantallen["bolletjes"] = aantallen["bolletjes"] + aantal
@@ -104,7 +104,7 @@ def meerbestellen():
             continue
 #--------------------------Bonnetje---------------------------------------------------------------------------------------------#
 def bonnetje(aantal:int , klanten:str):
-    bon= True
+
     
     
     hoorntjesprijs = aantallen["hoorntjes"] * prijzen["hoorntjes"]
@@ -115,7 +115,7 @@ def bonnetje(aantal:int , klanten:str):
     sprinkelsprijs = toppingsaantal["sprinkels"] * prijzen["sprinkels"]
 
     if klanten =="1":
-        totaalprijs = aantallen["bolletjes"] * prijzen["bolletjes"] + aantallen["hoorntjes"] * prijzen["hoorntjes"] + aantallen["bakjes"] * prijzen["bakjes"] + toppingsaantal["slagroom"] * prijzen["slagroom"] + toppingsaantal["caramelbakje"] * prijzen["caramelbakje"] + toppingsaantal["caramelhoorntje"] * prijzen["caramelhoorntje"] + toppingsaantal["sprinkels"] * prijzen["sprinkels"]
+        totaalprijs = aantallen["bolletjes"] * prijzen["bolletjes"] + hoorntjesprijs+bakjesprijs+slagroomprijs+bcaramelprijs+hcaramelprijs+sprinkelsprijs
     if klanten =="2":
         totaalprijs = aantallen["liter"] * prijzen["liter"]
         
@@ -124,52 +124,52 @@ def bonnetje(aantal:int , klanten:str):
     
 
     
-    while bon == True:
-        print("-----------[Papi Gelato]-----------")
-        if litersmakenaantal["a"] >= 1:
-            print("L.Aardbei:  ",litersmakenaantal["a"],"X    € 9,80   ""€ {:,.2f}".format(litersmakenaantal["a"]*prijzen["liter"]))
-        if litersmakenaantal["c"] >= 1:
-            print("L.Chocolade:",litersmakenaantal["c"],"X    € 9,80   ""€ {:,.2f}".format(litersmakenaantal["c"]*prijzen["liter"]))
-        if litersmakenaantal["v"] >= 1:
-            print("L.Vanille:  ",litersmakenaantal["v"],"X    € 9,80   ""€ {:,.2f}".format(litersmakenaantal["v"]*prijzen["liter"]))
+
+    print("-----------[Papi Gelato]-----------")
+    if litersmakenaantal["a"] >= 1:
+        print("L.Aardbei:  ",litersmakenaantal["a"],"X    € 9,80   ""€ {:,.2f}".format(litersmakenaantal["a"]*prijzen["liter"]))
+    if litersmakenaantal["c"] >= 1:
+        print("L.Chocolade:",litersmakenaantal["c"],"X    € 9,80   ""€ {:,.2f}".format(litersmakenaantal["c"]*prijzen["liter"]))
+    if litersmakenaantal["v"] >= 1:
+        print("L.Vanille:  ",litersmakenaantal["v"],"X    € 9,80   ""€ {:,.2f}".format(litersmakenaantal["v"]*prijzen["liter"]))
 
 
-        if smakenaantal["a"] >= 1:
-            print("B.Aardbei:  ",smakenaantal["a"],"X    € 0,95   ""€ {:,.2f}".format(smakenaantal["a"]*prijzen["bolletjes"]))
-        if smakenaantal["c"] >= 1:
-            print("B.Chocolade:",smakenaantal["c"],"X    € 0,95   ""€ {:,.2f}".format(smakenaantal["c"]*prijzen["bolletjes"]))
-        if smakenaantal["v"] >= 1:
-            print("B.Vanille:  ",smakenaantal["v"],"X    € 0,95   ""€ {:,.2f}".format(smakenaantal["v"]*prijzen["bolletjes"]))
+    if smakenaantal["a"] >= 1:
+        print("B.Aardbei:  ",smakenaantal["a"],"X    € 0,95   ""€ {:,.2f}".format(smakenaantal["a"]*prijzen["bolletjes"]))
+    if smakenaantal["c"] >= 1:
+        print("B.Chocolade:",smakenaantal["c"],"X    € 0,95   ""€ {:,.2f}".format(smakenaantal["c"]*prijzen["bolletjes"]))
+    if smakenaantal["v"] >= 1:
+        print("B.Vanille:  ",smakenaantal["v"],"X    € 0,95   ""€ {:,.2f}".format(smakenaantal["v"]*prijzen["bolletjes"]))
 
 
-        if aantallen["hoorntjes"] >= 1:
-            print("Hoorntjes:  ",aantallen["hoorntjes"],"X    € 1,25   ""€ {:,.2f}".format(hoorntjesprijs))
-        if aantallen["bakjes"] >= 1:
-            print("Bakjes:""     ",aantallen["bakjes"],"X    € 0,75 ""  € {:,.2f}".format(bakjesprijs))
+    if aantallen["hoorntjes"] >= 1:
+        print("Hoorntjes:  ",aantallen["hoorntjes"],"X    € 1,25   ""€ {:,.2f}".format(hoorntjesprijs))
+    if aantallen["bakjes"] >= 1:
+        print("Bakjes:""     ",aantallen["bakjes"],"X    € 0,75 ""  € {:,.2f}".format(bakjesprijs))
 
 
-        if toppingsaantal["slagroom"] >= 1:
-            print("Slagroom:   ",toppingsaantal["slagroom"],"X    €","{:,.2f}".format(prijzen["slagroom"]),"  ""€ {:,.2f}".format(slagroomprijs))
-        if toppingsaantal["sprinkels"] >= 1:
-            print("Sprinkels:  ",toppingsaantal["sprinkels"],"X    €","{:,.2f}".format(prijzen["sprinkels"]),"  ""€ {:,.2f}".format(sprinkelsprijs))
-        if toppingsaantal["caramelbakje"] >= 1:
-            print("B.Caramel:  ",toppingsaantal["caramelbakje"],"X    €","{:,.2f}".format(prijzen["caramelbakje"]),"  ""€ {:,.2f}".format(bcaramelprijs))
-        if toppingsaantal["caramelhoorntje"] >= 1:
-            print("H.Caramel:  ",toppingsaantal["caramelhoorntje"],"X    €","{:,.2f}".format(prijzen["caramelhoorntje"]),"  ""€ {:,.2f}".format(hcaramelprijs))
+    if toppingsaantal["slagroom"] >= 1:
+        print("Slagroom:   ",toppingsaantal["slagroom"],"X    €","{:,.2f}".format(prijzen["slagroom"]),"  ""€ {:,.2f}".format(slagroomprijs))
+    if toppingsaantal["sprinkels"] >= 1:
+        print("Sprinkels:  ",toppingsaantal["sprinkels"],"X    €","{:,.2f}".format(prijzen["sprinkels"]),"  ""€ {:,.2f}".format(sprinkelsprijs))
+    if toppingsaantal["caramelbakje"] >= 1:
+        print("B.Caramel:  ",toppingsaantal["caramelbakje"],"X    €","{:,.2f}".format(prijzen["caramelbakje"]),"  ""€ {:,.2f}".format(bcaramelprijs))
+    if toppingsaantal["caramelhoorntje"] >= 1:
+        print("H.Caramel:  ",toppingsaantal["caramelhoorntje"],"X    €","{:,.2f}".format(prijzen["caramelhoorntje"]),"  ""€ {:,.2f}".format(hcaramelprijs))
 
-        
+    
 
-        print("                        -----------")
-        print("Totaal =                     € {:,.2f}".format(totaalprijs))
-        
+    print("                        -----------")
+    print("Totaal =                     € {:,.2f}".format(totaalprijs))
+    
 
 
-        if klanten == "2":
-            print("BTW (6%) =                   € {:,.2f}".format(totaalprijs/106*6))
-        print("Bedankt en tot ziens bij Papi Gelato")
+    if klanten == "2":
+        print("BTW (6%) =                   € {:,.2f}".format(totaalprijs/106*6))
+    print("Bedankt en tot ziens bij Papi Gelato")
 
-        
-        break
+    
+    
 #--------------------------smaken---------------------------------------------------------------------------------------------#
 def kiesjesmaak(aantal:int , klanten:str):
         
