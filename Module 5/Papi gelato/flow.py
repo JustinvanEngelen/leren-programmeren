@@ -11,10 +11,11 @@ while meer == True:
     kiesjesmaak(aantal,klanten)
     if klanten == "2":
         break
+    
     if klanten == "1":
         keuze=verpakking(aantal)
-        toppings()
+        toppings(aantal,keuze)
         bestelling(aantal,keuze)
         meer= meerbestellen()
-bonnetje(aantal)
+bonnetje(aantal,klanten)
 

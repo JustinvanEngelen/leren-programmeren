@@ -1,11 +1,12 @@
 prijzen={
-    "bolletjes" : 0.95,
-    "hoorntjes" : 1.25,
-    "bakjes"    : 0.75,
-    "slagroom"  : 0.50,
-    "sprinkels" : 0.30,
-    "caramel"   : 0.60,
-    "liter"     : 9.80
+    "bolletjes"      : 0.95,
+    "hoorntjes"      : 1.25,
+    "bakjes"         : 0.75,
+    "slagroom"       : 0.50,
+    "sprinkels"      : 0.30,
+    "caramelbakje"   : 0.90,
+    "caramelhoorntje": 0.60,
+    "liter"          : 9.80
 }
 
 aantallen={
@@ -47,7 +48,10 @@ topping={
 }
 
 toppingsaantal={
-    "slagroom" : 0,
-    "sprinkels" : 0,
-    "caramel" : 0
+    "slagroom"        : 0,
+    "sprinkels"       : 0,
+    "caramelbakje"    : 0,
+    "caramelhoorntje" : 0
 }
+
+
